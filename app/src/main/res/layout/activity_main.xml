@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffecb3"
+    android:orientation="vertical"
+    tools:context="com.example.android.shopinglistv2.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f57c00"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/vegetables"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vegetables" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffca28"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/fruits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fruits" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f9a825"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/bread"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bread" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffc107"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/drinks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/drinks" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffeb3b"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/sweets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sweets" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f9a825"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/summary" />
+    </FrameLayout>
+
+
+</LinearLayout>

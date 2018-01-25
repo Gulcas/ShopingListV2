@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LISTA ZAKUPÓW</string>
+    <string name="vegetables">warzywa</string>
+    <string name="fruits">owoce</string>
+    <string name="bread">pieczywo</string>
+    <string name="drinks">napoje</string>
+    <string name="sweets">słodkości</string>
+    <string name="changeClass">wybieraj mądrze</string>
+    <string name="tomato">pomidor</string>
+    <string name="potato">ziemniaki</string>
+    <string name="onion">cebula</string>
+    <string name="cocumber">ogórek</string>
+    <string name="iceberg">sałata lodowa</string>
+    <string name="garlic">czosnek</string>
+    <string name="to_many">za dużo</string>
+    <string name="to_low">za mało</string>
+    <string name="summary">podsumowanie</string>
+    <string name="back">powrót</string>
+    <string name="send">wyślij</string>
+    <string name="sending">wysyłanie</string>
+    <string name="nothingOrdered">puste zamówienie</string>
+</resources>

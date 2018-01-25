@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SHOPING LIST</string>
+    <string name="vegetables">vegetables</string>
+    <string name="fruits">fruits</string>
+    <string name="bread">bread</string>
+    <string name="drinks">drinks</string>
+    <string name="sweets">sweets</string>
+    <string name="changeClass">choose wisley</string>
+    <string name="tomato">tomato</string>
+    <string name="potato">potato</string>
+    <string name="onion">onion</string>
+    <string name="cocumber">cocumber</string>
+    <string name="iceberg">iceberg luttece</string>
+    <string name="garlic">garlic</string>
+    <string name="to_many">to many</string>
+    <string name="to_low">not enough</string>
+    <string name="summary">summary</string>
+    <string name="back">back</string>
+    <string name="send">send</string>
+    <string name="sending">sending</string>
+    <string name="nothingOrdered">empty order</string>
+
+</resources>

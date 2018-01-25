@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/basket" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="backClick"
+            android:text="@string/summary" />
+
+        <Button
+            android:id="@+id/backButtonVegetables"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/backButton"
+            android:onClick="backToMainClick"
+            android:text="@string/back" />
+
+        <TextView
+            android:id="@+id/tomatoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/backButtonVegetables"
+            android:text="@string/tomato"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/tomatoPlusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/backButtonVegetables"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="increment"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/tomatoNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/backButtonVegetables"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/tomatoPlusButton"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/tomatoMinusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/backButtonVegetables"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tomatoNumber"
+            android:onClick="decrement"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/onionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tomatoTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/onion" />
+
+        <Button
+            android:id="@+id/onionPlusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tomatoPlusButton"
+            android:layout_centerHorizontal="true"
+            android:onClick="incrementOnion"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/onionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tomatoPlusButton"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/onionPlusButton"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/onionMinusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tomatoPlusButton"
+            android:layout_toRightOf="@id/onionNumber"
+            android:onClick="decrementOnion"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/cocumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/onionTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/cocumber" />
+
+        <Button
+            android:id="@+id/cocumberPlusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/onionPlusButton"
+            android:layout_centerHorizontal="true"
+            android:onClick="incrementCocumber"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/cocumberNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/onionPlusButton"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/cocumberPlusButton"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/cocumberMinusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/onionPlusButton"
+            android:layout_toRightOf="@id/cocumberNumber"
+            android:onClick="decrementCocumber"
+            android:text="-" /><TextView
+        android:id="@+id/potatoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cocumberTextView"
+        android:layout_marginTop="20dp"
+        android:text="@string/potato" />
+
+        <Button
+            android:id="@+id/potatoPlusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cocumberPlusButton"
+            android:layout_centerHorizontal="true"
+            android:onClick="incrementPotato"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/potatoNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cocumberPlusButton"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/potatoPlusButton"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/potatoMinusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cocumberPlusButton"
+            android:layout_toRightOf="@id/potatoNumber"
+            android:onClick="decrementPotato"
+            android:text="-" />
+
+
+    </RelativeLayout>
+</ScrollView>
