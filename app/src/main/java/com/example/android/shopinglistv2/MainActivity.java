@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -15,22 +14,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         TextView warzywka = findViewById(R.id.vegetables);
         warzywka.setOnClickListener(new View.OnClickListener()
-
         {
             @Override
             public void onClick(View view) {
                 Intent warzywaIntent = new Intent(MainActivity.this, VegetablesActivity.class);
                 startActivity(warzywaIntent);
-//                Toast.makeText(MainActivity.this, getString(R.string.changeClass), Toast.LENGTH_SHORT).show(); // toast message usówany bo wkurwia usera
+//                Toast.makeText(MainActivity.this, getString(R.string.changeClass), Toast.LENGTH_SHORT).show(); // toast message usuwany bo wkurwia usera
             }
         });
 
         TextView owocki = findViewById(R.id.fruits);
         owocki.setOnClickListener(new View.OnClickListener()
-
         {
             @Override
             public void onClick(View view) {
@@ -39,10 +35,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         TextView chlebek = findViewById(R.id.bread);
         chlebek.setOnClickListener(new View.OnClickListener()
-
         {
             @Override
             public void onClick(View view) {
@@ -53,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
 
         TextView napoje = findViewById(R.id.drinks);
         napoje.setOnClickListener(new View.OnClickListener()
-
         {
             @Override
             public void onClick(View view) {
@@ -65,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
 
         TextView slodkosci = findViewById(R.id.sweets);
         slodkosci.setOnClickListener(new View.OnClickListener()
-
         {
             @Override
             public void onClick(View view) {
@@ -77,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
 
         TextView podsumowanie = findViewById(R.id.summary);
         podsumowanie.setOnClickListener(new View.OnClickListener()
-
         {
             @Override
             public void onClick(View view) {
