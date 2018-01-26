@@ -135,13 +135,15 @@
             android:layout_below="@id/onionPlusButton"
             android:layout_toRightOf="@id/cocumberNumber"
             android:onClick="decrementCocumber"
-            android:text="-" /><TextView
-        android:id="@+id/potatoTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/cocumberTextView"
-        android:layout_marginTop="20dp"
-        android:text="@string/potato" />
+            android:text="-" />
+        
+        <TextView
+            android:id="@+id/potatoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cocumberTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/potato" />
 
         <Button
             android:id="@+id/potatoPlusButton"
