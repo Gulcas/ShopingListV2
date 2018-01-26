@@ -29,6 +29,8 @@
             android:label="@string/sweets"/>
         <activity android:name="Summary"
             android:label="@string/summary"/>
+        <activity android:name="ReceiverActivity"
+            android:label="@string/receiver"/>
     </application>
 
 </manifest>

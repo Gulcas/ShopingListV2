@@ -26,4 +26,5 @@
     <string name="cauliflower">cauliflower</string>
     <string name="orderReceiver">add order receiver</string>
     <string name="enterReceiverNumber">add order receiver number</string>
+    <string name="receiver">add order receiver number</string>
 </resources>

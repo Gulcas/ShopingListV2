@@ -26,4 +26,6 @@
     <string name="brocooli">brokół</string>
     <string name="cauliflower">kalafior</string>
     <string name="orderReceiver">odbiorca zamówienia</string>
+    <string name="enterReceiverNumber">dodaj numer odbiorcy</string>
+    <string name="receiver">odbiorca zamówienia</string>
 </resources>

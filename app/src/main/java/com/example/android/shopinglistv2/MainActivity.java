@@ -22,7 +22,9 @@ public class MainActivity extends AppCompatActivity {
                Intent odbiorcaIntent = new Intent (MainActivity.this, ReceiverActivity.class);
                startActivity(odbiorcaIntent);
             }
-        }); //dodać jeszcze toast wyświetlający numer odbiorcy zamówienia
+        });
+
+
 
         TextView warzywka = findViewById(R.id.vegetables);
         warzywka.setOnClickListener(new View.OnClickListener()
