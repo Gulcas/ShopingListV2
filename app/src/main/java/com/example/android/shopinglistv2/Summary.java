@@ -195,6 +195,11 @@ public class Summary extends AppCompatActivity {
         TextView vegetableNameSeven = (TextView) findViewById(R.id.summaryTextViewSiodmy);
         vegetableNameSeven.setText("" + s);
     }
+    
+    private void displayStringEight(String s) {
+    TextView vegetableNameEight = (TextView) findViewById(R.id.summaryTextViewOsmy);
+    vegetableNameEight.setText("" + s);
+    }
     //dodać kolejne pola do podsumowania zamówienia
 }
 
