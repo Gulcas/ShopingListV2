@@ -14,6 +14,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        TextView odbiorca = findViewById(R.id.orderReceiverButton);
+        odbiorca.setOnClickListener(new View.OnClickListener()
+        {
+            @ Override
+            public void onClick(View v) {
+               Intent odbiorcaIntent = new Intent (MainActivity.this, ReceiverActivity.class);
+               startActivity(odbiorcaIntent);
+            }
+        }); //dodać jeszcze toast wyświetlający numer odbiorcy zamówienia
+
         TextView warzywka = findViewById(R.id.vegetables);
         warzywka.setOnClickListener(new View.OnClickListener()
         {

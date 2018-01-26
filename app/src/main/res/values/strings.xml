@@ -11,7 +11,6 @@
     <string name="onion">onion</string>
     <string name="cocumber">cocumber</string>
     <string name="iceberg">iceberg luttece</string>
-    <string name="garlic">garlic</string>
     <string name="to_many">to many</string>
     <string name="to_low">not enough</string>
     <string name="summary">summary</string>
@@ -19,5 +18,12 @@
     <string name="send">send</string>
     <string name="sending">sending</string>
     <string name="nothingOrdered">empty order</string>
-
+    <string name="paprika">paprika</string>
+    <string name="parsley">parsley</string>
+    <string name="chive">chive</string>
+    <string name="garlic">garlic</string>
+    <string name="brocooli">brocooli</string>
+    <string name="cauliflower">cauliflower</string>
+    <string name="orderReceiver">add order receiver</string>
+    <string name="enterReceiverNumber">add order receiver number</string>
 </resources>

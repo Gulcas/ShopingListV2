@@ -172,6 +172,76 @@
             android:onClick="decrementPotato"
             android:text="-" />
 
+        <TextView
+            android:id="@+id/paprikaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/potatoTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/paprika" />
+
+        <Button
+            android:id="@+id/paprikaPlusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/potatoPlusButton"
+            android:layout_centerHorizontal="true"
+            android:onClick="incrementPaprika"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/paprikaNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/potatoPlusButton"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/paprikaPlusButton"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/paprikaMinusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/potatoPlusButton"
+            android:layout_toRightOf="@id/paprikaNumber"
+            android:onClick="decrementPaprika"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/parsleyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paprikaTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/parsley" />
+
+        <Button
+            android:id="@+id/parsleyPlusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paprikaPlusButton"
+            android:layout_centerHorizontal="true"
+            android:onClick="incrementParsley"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/parsleyNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paprikaPlusButton"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/parsleyPlusButton"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/parsleyMinusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paprikaPlusButton"
+            android:layout_toRightOf="@id/parsleyNumber"
+            android:onClick="decrementParsley"
+            android:text="-" />
+
 
     </RelativeLayout>
 </ScrollView>

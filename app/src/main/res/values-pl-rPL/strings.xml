@@ -20,4 +20,10 @@
     <string name="send">wyślij</string>
     <string name="sending">wysyłanie</string>
     <string name="nothingOrdered">puste zamówienie</string>
+    <string name="paprika">papryka</string>
+    <string name="parsley">pietruszka</string>
+    <string name="chive">szczypior</string>
+    <string name="brocooli">brokół</string>
+    <string name="cauliflower">kalafior</string>
+    <string name="orderReceiver">odbiorca zamówienia</string>
 </resources>

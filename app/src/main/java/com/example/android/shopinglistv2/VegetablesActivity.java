@@ -19,6 +19,8 @@ public class VegetablesActivity extends AppCompatActivity {
     private static int onionQuantity; //między klasowa zmienna cebulowa
     private static int cocumberQuntity;
     private static int potatoQuantity;
+    private static int paprikaQuantity;
+    private static int parsleyQuantity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,14 +56,33 @@ public class VegetablesActivity extends AppCompatActivity {
         displayCocumber(cocumberQuntity);
     }
 
-    public void incrementPotato (View v) {
-        if (tomatoQuantity == 9 ) {
+    public void incrementPotato(View v) {
+        if (tomatoQuantity == 9) {
             Toast.makeText(this, getString(R.string.to_many), Toast.LENGTH_SHORT).show();
             return;
         }
         potatoQuantity++;
         displayPotato(potatoQuantity);
     }
+
+    public void incrementPaprika(View v) {
+        if (paprikaQuantity == 9) {
+            Toast.makeText(this, getString(R.string.to_many), Toast.LENGTH_SHORT).show();
+            return;
+        }
+        paprikaQuantity++;
+        displayPaprika(paprikaQuantity);
+    }
+
+    public void incrementParsley(View v) {
+        if (parsleyQuantity == 9) {
+            Toast.makeText(this, getString(R.string.to_many), Toast.LENGTH_SHORT).show();
+            return;
+        }
+        parsleyQuantity++;
+        displayParsley(parsleyQuantity);
+    }
+
 
     //Ta metoda wywołana jest przez naciśnięcie decrement i odejmuje 1 od variable int określonej na początku jako public
     public void decrement(View v) {
@@ -94,7 +115,7 @@ public class VegetablesActivity extends AppCompatActivity {
         displayCocumber(cocumberQuntity);
     }
 
-    public void decrementPotato (View v) {
+    public void decrementPotato(View v) {
         if (potatoQuantity < 1) {
             potatoQuantity = 0;
             Toast.makeText(this, getString(R.string.to_low), Toast.LENGTH_SHORT).show();
@@ -102,6 +123,26 @@ public class VegetablesActivity extends AppCompatActivity {
         }
         potatoQuantity--;
         displayPotato(potatoQuantity);
+    }
+
+    public void decrementPaprika(View v) {
+        if (paprikaQuantity < 1) {
+            paprikaQuantity = 0;
+            Toast.makeText(this, getString(R.string.to_low), Toast.LENGTH_SHORT).show();
+            return;
+        }
+        paprikaQuantity--;
+        displayPaprika(paprikaQuantity);
+    }
+
+    public void decrementParsley(View v) {
+        if (parsleyQuantity < 0) {
+            parsleyQuantity = 0;
+            Toast.makeText(this, getString(R.string.to_low), Toast.LENGTH_SHORT).show();
+            return;
+        }
+        parsleyQuantity--;
+        displayParsley(parsleyQuantity);
     }
 
     //Ta metoda wyświetla wartość określoną w "display"
@@ -125,6 +166,16 @@ public class VegetablesActivity extends AppCompatActivity {
         quantityPotato.setText("" + numberPotato);
     }
 
+    private void displayPaprika(int numberPaprika) {
+        TextView quantityPaprika = (TextView) findViewById(R.id.paprikaNumber);
+        quantityPaprika.setText("" + numberPaprika);
+    }
+
+    private void displayParsley(int numberParsley) {
+        TextView quantityParsley = (TextView) findViewById(R.id.parsleyNumber);
+        quantityParsley.setText("" + numberParsley);
+    }
+
     //funkcja pozwala użyć variable przez inną klasę
     public static int getVariable() {
         return tomatoQuantity;
@@ -142,12 +193,21 @@ public class VegetablesActivity extends AppCompatActivity {
         return potatoQuantity;
     }
 
+    public static int getVariablePaprika() {
+        return paprikaQuantity;
+    }
+
+    public static int getVariableParsley() {
+        return parsleyQuantity;
+    }
+
     //metoda przechodzi do klasy summary
     public void backClick(View v) {
         Intent summaryIntent = new Intent(VegetablesActivity.this, Summary.class);
         startActivity(summaryIntent);
     }
-    public void backToMainClick (View v) {
+
+    public void backToMainClick(View v) {
         Intent mainIntent = new Intent(VegetablesActivity.this, MainActivity.class);
         startActivity(mainIntent);
     }

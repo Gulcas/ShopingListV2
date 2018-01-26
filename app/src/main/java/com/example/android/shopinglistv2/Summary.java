@@ -28,6 +28,8 @@ public class Summary extends AppCompatActivity {
         int iOnion = VegetablesActivity.getVariableOnion();
         int iCocumber = VegetablesActivity.getVariableCocumber();
         int iPotato = VegetablesActivity.getVariablePotato();
+        int iPaprika = VegetablesActivity.getVariablePaprika();
+        int iParsley = VegetablesActivity.getVariableParsley();
 
         //stworzę listę array do której wcielone zostaną wszystkie zamówione produkty oraz ich ilości
         ArrayList<Integer> zamowienie = new ArrayList<>(); //arraylist dla ilości
@@ -48,6 +50,14 @@ public class Summary extends AppCompatActivity {
         if (iPotato > 0) {
             zamowienie.add(iPotato);
             zamowienieString.add(getString(R.string.potato));
+        }
+        if (iPaprika > 0) {
+            zamowienie.add(iPaprika);
+            zamowienieString.add(getString(R.string.paprika));
+        }
+        if (iParsley > 0) {
+            zamowienie.add(iParsley);
+            zamowienieString.add(getString(R.string.parsley));
         }
         //dopisać kolejne if statementy sprawdzające co jeszcze zostaje zamówione
 
@@ -90,6 +100,134 @@ public class Summary extends AppCompatActivity {
             displayStringThree(zamowienieString.get(2));
             displayIntFour(zamowienie.get(3));
             displayStringFour(zamowienieString.get(3));
+        }
+
+        if (i == 5) {
+            displayIntOne(zamowienie.get(0));
+            displayStringOne(zamowienieString.get(0));
+            displayIntTwo(zamowienie.get(1));
+            displayStringTwo(zamowienieString.get(1));
+            displayIntThree(zamowienie.get(2));
+            displayStringThree(zamowienieString.get(2));
+            displayIntFour(zamowienie.get(3));
+            displayStringFour(zamowienieString.get(3));
+            displayIntFive(zamowienie.get(4));
+            displayStringFive(zamowienieString.get(4));
+        }
+
+        if (i == 6) {
+            displayIntOne(zamowienie.get(0));
+            displayStringOne(zamowienieString.get(0));
+            displayIntTwo(zamowienie.get(1));
+            displayStringTwo(zamowienieString.get(1));
+            displayIntThree(zamowienie.get(2));
+            displayStringThree(zamowienieString.get(2));
+            displayIntFour(zamowienie.get(3));
+            displayStringFour(zamowienieString.get(3));
+            displayIntFive(zamowienie.get(4));
+            displayStringFive(zamowienieString.get(4));
+            displayIntSix(zamowienie.get(5));
+            displayStringSix(zamowienieString.get(5));
+        }
+
+        if (i == 7) {
+            displayIntOne(zamowienie.get(0));
+            displayStringOne(zamowienieString.get(0));
+            displayIntTwo(zamowienie.get(1));
+            displayStringTwo(zamowienieString.get(1));
+            displayIntThree(zamowienie.get(2));
+            displayStringThree(zamowienieString.get(2));
+            displayIntFour(zamowienie.get(3));
+            displayStringFour(zamowienieString.get(3));
+            displayIntFive(zamowienie.get(4));
+            displayStringFive(zamowienieString.get(4));
+            displayIntSix(zamowienie.get(5));
+            displayStringSix(zamowienieString.get(5));
+            displayIntSeven(zamowienie.get(6));
+            displayStringSeven(zamowienieString.get(6));
+        }
+        if (i == 8) {
+            displayIntOne(zamowienie.get(0));
+            displayStringOne(zamowienieString.get(0));
+            displayIntTwo(zamowienie.get(1));
+            displayStringTwo(zamowienieString.get(1));
+            displayIntThree(zamowienie.get(2));
+            displayStringThree(zamowienieString.get(2));
+            displayIntFour(zamowienie.get(3));
+            displayStringFour(zamowienieString.get(3));
+            displayIntFive(zamowienie.get(4));
+            displayStringFive(zamowienieString.get(4));
+            displayIntSix(zamowienie.get(5));
+            displayStringSix(zamowienieString.get(5));
+            displayIntSeven(zamowienie.get(6));
+            displayStringSeven(zamowienieString.get(6));
+            displayIntEight(zamowienie.get(7));
+            displayStringEight(zamowienieString.get(7));
+        }
+        if (i == 9) {
+            displayIntOne(zamowienie.get(0));
+            displayStringOne(zamowienieString.get(0));
+            displayIntTwo(zamowienie.get(1));
+            displayStringTwo(zamowienieString.get(1));
+            displayIntThree(zamowienie.get(2));
+            displayStringThree(zamowienieString.get(2));
+            displayIntFour(zamowienie.get(3));
+            displayStringFour(zamowienieString.get(3));
+            displayIntFive(zamowienie.get(4));
+            displayStringFive(zamowienieString.get(4));
+            displayIntSix(zamowienie.get(5));
+            displayStringSix(zamowienieString.get(5));
+            displayIntSeven(zamowienie.get(6));
+            displayStringSeven(zamowienieString.get(6));
+            displayIntEight(zamowienie.get(7));
+            displayStringEight(zamowienieString.get(7));
+            displayIntNine(zamowienie.get(8));
+            displayStringNine(zamowienieString.get(8));
+        }
+        if (i == 10) {
+            displayIntOne(zamowienie.get(0));
+            displayStringOne(zamowienieString.get(0));
+            displayIntTwo(zamowienie.get(1));
+            displayStringTwo(zamowienieString.get(1));
+            displayIntThree(zamowienie.get(2));
+            displayStringThree(zamowienieString.get(2));
+            displayIntFour(zamowienie.get(3));
+            displayStringFour(zamowienieString.get(3));
+            displayIntFive(zamowienie.get(4));
+            displayStringFive(zamowienieString.get(4));
+            displayIntSix(zamowienie.get(5));
+            displayStringSix(zamowienieString.get(5));
+            displayIntSeven(zamowienie.get(6));
+            displayStringSeven(zamowienieString.get(6));
+            displayIntEight(zamowienie.get(7));
+            displayStringEight(zamowienieString.get(7));
+            displayIntNine(zamowienie.get(8));
+            displayStringNine(zamowienieString.get(8));
+            displayIntTen(zamowienie.get(9));
+            displayStringTen(zamowienieString.get(9));
+        }
+        if (i == 11) {
+            displayIntOne(zamowienie.get(0));
+            displayStringOne(zamowienieString.get(0));
+            displayIntTwo(zamowienie.get(1));
+            displayStringTwo(zamowienieString.get(1));
+            displayIntThree(zamowienie.get(2));
+            displayStringThree(zamowienieString.get(2));
+            displayStringFour(zamowienieString.get(3));
+            displayIntFive(zamowienie.get(4));
+            displayStringFive(zamowienieString.get(4));
+            displayIntSix(zamowienie.get(5));
+            displayStringSix(zamowienieString.get(5));
+            displayIntSeven(zamowienie.get(6));
+            displayStringSeven(zamowienieString.get(6));
+            displayIntEight(zamowienie.get(7));
+            displayStringEight(zamowienieString.get(7));
+            displayIntNine(zamowienie.get(8));
+            displayStringNine(zamowienieString.get(8));
+            displayIntTen(zamowienie.get(9));
+            displayStringTen(zamowienieString.get(9));
+            displayIntEleven(zamowienie.get(10));
+            displayStringEleven(zamowienieString.get(10));
         }
 
 //            if ((iTomato > 0) && (iOnion > 0)) {  //jeżeli są zamawiane tomatosy i oniony to logiczne jest że mają miejsce 1 w array-->pamiętać że array zaczyna się od 0
@@ -146,7 +284,7 @@ public class Summary extends AppCompatActivity {
         vegetableNumberFour.setText("" + i);
     }
 
-    private void diplayIntFive(int i) {
+    private void displayIntFive(int i) {
         TextView vegetableNumberFive = (TextView) findViewById(R.id.summaryLiczbaPiata);
         vegetableNumberFive.setText("" + i);
     }
@@ -159,7 +297,28 @@ public class Summary extends AppCompatActivity {
     private void displayIntSeven(int i) {
         TextView vegetablesNumberSeven = (TextView) findViewById(R.id.summaryLiczbaSiodma);
         vegetablesNumberSeven.setText("" + i);
-    } //dopisać funkcje na pozostąłe wyświetlanie intów i stringów poniżej
+    }
+
+    private void displayIntEight(int i) {
+        TextView vegetablesNumberEight = (TextView) findViewById(R.id.summaryLiczbaOsma);
+        vegetablesNumberEight.setText("" + i);
+    }
+
+    private void displayIntNine(int i) {
+        TextView vegetablesNumberNine = (TextView) findViewById(R.id.summaryLiczbaDziewiata);
+        vegetablesNumberNine.setText("" + i);
+    }
+
+    private void displayIntTen(int i) {
+        TextView vegetablesNumberTen = (TextView) findViewById(R.id.summaryLiczbaDziesiata);
+        vegetablesNumberTen.setText("" + i);
+    }
+
+    private void displayIntEleven(int i) {
+        TextView vegetablesNumberEleven = (TextView) findViewById(R.id.summaryLiczbaJedenasta);
+        vegetablesNumberEleven.setText("" + i);
+    }
+    //dopisać funkcje na pozostąłe wyświetlanie intów i stringów poniżej
 
     private void displayStringOne(String s) {
         TextView vegetableName = (TextView) findViewById(R.id.summaryTextView);
@@ -199,6 +358,20 @@ public class Summary extends AppCompatActivity {
     private void displayStringEight(String s) {
     TextView vegetableNameEight = (TextView) findViewById(R.id.summaryTextViewOsmy);
     vegetableNameEight.setText("" + s);
+    }
+
+    private void displayStringNine(String s) {
+        TextView vegetableNameNine = (TextView) findViewById(R.id.summaryTextViewDziewiaty);
+        vegetableNameNine.setText("" + s);
+    }
+
+    private void displayStringTen(String s) {
+        TextView vegetablesNameTen = (TextView) findViewById(R.id.summaryTextViewDziesiaty);
+        vegetablesNameTen.setText("" + s);
+    }
+    private void displayStringEleven(String s) {
+        TextView vegetablesNameEleven = (TextView) findViewById(R.id.summaryTextViewJedenasty);
+        vegetablesNameEleven.setText("" + s);
     }
     //dodać kolejne pola do podsumowania zamówienia
 }
