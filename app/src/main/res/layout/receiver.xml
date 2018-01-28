@@ -10,9 +10,18 @@
         android:id="@+id/receiverNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="9"
-        android:inputType="phone"
+        android:inputType="number"
         android:layout_centerInParent="true"
         android:textSize="28dp"
         android:hint="@string/enterReceiverNumber"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/receiverTextView"
+        android:layout_below="@id/receiverNumber"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:onClick="openMain"/>
 </RelativeLayout>

@@ -14,21 +14,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView odbiorca = findViewById(R.id.orderReceiverButton);
-        odbiorca.setOnClickListener(new View.OnClickListener()
-        {
-            @ Override
-            public void onClick(View v) {
-               Intent odbiorcaIntent = new Intent (MainActivity.this, ReceiverActivity.class);
-               startActivity(odbiorcaIntent);
-            }
-        });
-
-
 
         TextView warzywka = findViewById(R.id.vegetables);
-        warzywka.setOnClickListener(new View.OnClickListener()
-        {
+        warzywka.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent warzywaIntent = new Intent(MainActivity.this, VegetablesActivity.class);
@@ -38,8 +26,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         TextView owocki = findViewById(R.id.fruits);
-        owocki.setOnClickListener(new View.OnClickListener()
-        {
+        owocki.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent fruitIntent = new Intent(MainActivity.this, FruitsActivity.class);
@@ -48,8 +35,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         TextView chlebek = findViewById(R.id.bread);
-        chlebek.setOnClickListener(new View.OnClickListener()
-        {
+        chlebek.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent breadIntent = new Intent(MainActivity.this, BreadActivity.class);
@@ -58,8 +44,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         TextView napoje = findViewById(R.id.drinks);
-        napoje.setOnClickListener(new View.OnClickListener()
-        {
+        napoje.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent drinksIntent = new Intent(MainActivity.this, DrinksActivity.class);
@@ -69,8 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         TextView slodkosci = findViewById(R.id.sweets);
-        slodkosci.setOnClickListener(new View.OnClickListener()
-        {
+        slodkosci.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent sweetsIntent = new Intent(MainActivity.this, SweetsActivity.class);
@@ -80,8 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         TextView podsumowanie = findViewById(R.id.summary);
-        podsumowanie.setOnClickListener(new View.OnClickListener()
-        {
+        podsumowanie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent summaryIntent = new Intent(MainActivity.this, Summary.class);
@@ -89,7 +72,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        final TextView odbiorca = findViewById(R.id.orderReceiverButton);
+        odbiorca.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent odbiorcaIntent = new Intent(MainActivity.this, ReceiverActivity.class);
+                startActivity(odbiorcaIntent);
+            }
+        });
+
 
     }
+
 
 }

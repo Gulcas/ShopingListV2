@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 /**
  * Created by rgran on 21.12.2017.
  */
@@ -21,6 +23,9 @@ public class VegetablesActivity extends AppCompatActivity {
     private static int potatoQuantity;
     private static int paprikaQuantity;
     private static int parsleyQuantity;
+    private static int chiveQuantity;
+    private static int icebergQuantity;
+    private static int garlicQuantity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +86,33 @@ public class VegetablesActivity extends AppCompatActivity {
         }
         parsleyQuantity++;
         displayParsley(parsleyQuantity);
+    }
+
+    public void incrementChive(View v) {
+        if (chiveQuantity == 9) {
+            Toast.makeText(this, getString(R.string.to_many), Toast.LENGTH_SHORT).show();
+            return;
+        }
+        chiveQuantity++;
+        displayChive(chiveQuantity);
+    }
+
+    public void incrementIceberg(View v) {
+        if (icebergQuantity == 9 ) {
+            Toast.makeText(this, getString(R.string.to_many), Toast.LENGTH_SHORT).show();
+            return;
+        }
+        icebergQuantity++;
+        displayIceberg(icebergQuantity);
+    }
+
+    public void incrementGarlic(View v) {
+        if (garlicQuantity == 9) {
+            Toast.makeText(this,getString(R.string.to_many), Toast.LENGTH_SHORT).show();
+            return;
+        }
+        garlicQuantity++;
+        displayGarlic(garlicQuantity);
     }
 
 
@@ -145,6 +177,36 @@ public class VegetablesActivity extends AppCompatActivity {
         displayParsley(parsleyQuantity);
     }
 
+    public void decrementChive(View v) {
+        if (chiveQuantity < 0) {
+            chiveQuantity = 0;
+            Toast.makeText(this, getString(R.string.to_low), Toast.LENGTH_SHORT).show();
+            return;
+        }
+        chiveQuantity--;
+        displayChive(chiveQuantity);
+    }
+
+    public void decrementIceberg(View v) {
+        if (icebergQuantity < 0) {
+            icebergQuantity = 0;
+            Toast.makeText(this, getString(R.string.to_low), Toast.LENGTH_SHORT).show();
+            return;
+        }
+        icebergQuantity--;
+        displayIceberg(icebergQuantity);
+    }
+
+    public void decrementGarlic(View v) {
+        if (garlicQuantity < 0) {
+            garlicQuantity = 0;
+            Toast.makeText(this, getString(R.string.to_low), Toast.LENGTH_SHORT).show();
+            return;
+        }
+        garlicQuantity--;
+        displayGarlic(garlicQuantity);
+    }
+
     //Ta metoda wyświetla wartość określoną w "display"
     private void display(int i) {
         TextView quantityBreadTextView = (TextView) findViewById(R.id.tomatoNumber);
@@ -176,6 +238,21 @@ public class VegetablesActivity extends AppCompatActivity {
         quantityParsley.setText("" + numberParsley);
     }
 
+    private void displayChive(int numberChive) {
+        TextView quantityChive = (TextView) findViewById(R.id.chiveNumber);
+        quantityChive.setText("" + numberChive);
+    }
+
+    private void displayIceberg(int numberIceberg) {
+        TextView quanityIceberg = (TextView) findViewById(R.id.icebergNumber);
+        quanityIceberg.setText("" + numberIceberg);
+    }
+
+    private void displayGarlic(int numberGarlic) {
+        TextView quantityGarlic = (TextView) findViewById(R.id.garlicNumber);
+        quantityGarlic.setText("" + numberGarlic);
+    }
+
     //funkcja pozwala użyć variable przez inną klasę
     public static int getVariable() {
         return tomatoQuantity;
@@ -199,6 +276,18 @@ public class VegetablesActivity extends AppCompatActivity {
 
     public static int getVariableParsley() {
         return parsleyQuantity;
+    }
+
+    public static int getVariableChive() {
+        return chiveQuantity;
+    }
+
+    public static int getVariableIceberg() {
+        return icebergQuantity;
+    }
+
+    public static int getVariableGarlic() {
+        return garlicQuantity;
     }
 
     //metoda przechodzi do klasy summary

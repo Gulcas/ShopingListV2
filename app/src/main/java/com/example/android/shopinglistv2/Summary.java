@@ -30,6 +30,9 @@ public class Summary extends AppCompatActivity {
         int iPotato = VegetablesActivity.getVariablePotato();
         int iPaprika = VegetablesActivity.getVariablePaprika();
         int iParsley = VegetablesActivity.getVariableParsley();
+        int iChive = VegetablesActivity.getVariableChive();
+        int iIceberg = VegetablesActivity.getVariableIceberg();
+        int iGarlic = VegetablesActivity.getVariableGarlic();
 
         //stworzę listę array do której wcielone zostaną wszystkie zamówione produkty oraz ich ilości
         ArrayList<Integer> zamowienie = new ArrayList<>(); //arraylist dla ilości
@@ -73,6 +76,7 @@ public class Summary extends AppCompatActivity {
         if (i == 1) {
             displayIntOne(zamowienie.get(0));
             displayStringOne(zamowienieString.get(0));
+
         }
 
         if (i == 2) {
@@ -374,6 +378,7 @@ public class Summary extends AppCompatActivity {
         vegetablesNameEleven.setText("" + s);
     }
     //dodać kolejne pola do podsumowania zamówienia
+
 }
 
 //należy dodać akcję do wysyłania po kliknięciu guzika

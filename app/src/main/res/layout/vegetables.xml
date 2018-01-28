@@ -242,6 +242,111 @@
             android:onClick="decrementParsley"
             android:text="-" />
 
+        <TextView
+            android:id="@+id/chiveTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/parsleyTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/chive" />
+
+        <Button
+            android:id="@+id/chivePlusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/parsleyPlusButton"
+            android:layout_centerHorizontal="true"
+            android:onClick="incrementChive"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/chiveNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/parsleyPlusButton"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/chivePlusButton"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/chiveMinusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/parsleyPlusButton"
+            android:layout_toRightOf="@id/chiveNumber"
+            android:onClick="decrementChive"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/icebergTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chiveTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/iceberg" />
+
+        <Button
+            android:id="@+id/icebergPlusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chivePlusButton"
+            android:layout_centerHorizontal="true"
+            android:onClick="incrementIceberg"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/icebergNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chivePlusButton"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/icebergPlusButton"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/icebergMinusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chivePlusButton"
+            android:layout_toRightOf="@id/icebergNumber"
+            android:onClick="decrementIceberg"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/garlicTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icebergTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/garlic" />
+
+        <Button
+            android:id="@+id/garlicPlusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icebergPlusButton"
+            android:layout_centerHorizontal="true"
+            android:onClick="incrementGarlic"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/garlicNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icebergPlusButton"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/garlicPlusButton"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/garlicMinusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icebergPlusButton"
+            android:layout_toRightOf="@id/garlicNumber"
+            android:onClick="decrementGarlic"
+            android:text="-" />
+
 
     </RelativeLayout>
 </ScrollView>
