@@ -385,4 +385,14 @@ public class FruitsActivity extends AppCompatActivity {
     public static int getVariablePineapple() {return pineappleQuantity;}
     public static int getVariableApricot() {return apricoQuantity;}
     
+     public void backClick(View v) {
+        Intent summaryIntent = new Intent(VegetablesActivity.this, Summary.class);
+        startActivity(summaryIntent);
+    }
+
+    public void backToMainClick(View v) {
+        Intent mainIntent = new Intent(VegetablesActivity.this, MainActivity.class);
+        startActivity(mainIntent);
+    }
+    
 }
