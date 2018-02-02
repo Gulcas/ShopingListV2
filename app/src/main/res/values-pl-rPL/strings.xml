@@ -28,4 +28,20 @@
     <string name="orderReceiver">odbiorca zamówienia</string>
     <string name="enterReceiverNumber">dodaj numer odbiorcy</string>
     <string name="receiver">odbiorca zamówienia</string>
+    <string name="apple">jabłko</string>
+    <string name="banana">banan</string>
+    <string name="lemon">cytryna</string>
+    <string name="mandarin">mandarynka</string>
+    <string name="orange">pomarańcz</string>
+    <string name="peach">brzoskwinia</string>
+    <string name="nectarine">nektarynka</string>
+    <string name="pear">gruszka</string>
+    <string name="grape">winogrono</string>
+    <string name="watermelon">arbuz</string>
+    <string name="cherry">wiśnia</string>
+    <string name="sweetcherry">czereśnia</string>
+    <string name="kiwi">kiwi</string>
+    <string name="strawberry">truskawki</string>
+    <string name="pineapple">ananas</string>
+    <string name="apricot">morela</string>
 </resources>
