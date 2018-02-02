@@ -27,4 +27,20 @@
     <string name="orderReceiver">add order receiver</string>
     <string name="enterReceiverNumber">add order receiver number</string>
     <string name="receiver">add order receiver number</string>
+    <string name="apple">apple</string>
+    <string name="banana">banana</string>
+    <string name="lemon">lemon</string>
+    <string name="mandarin">mandarin</string>
+    <string name="orange">orange</string>
+    <string name="peach">peach</string>
+    <string name="nectarine">nectarine</string>
+    <string name="pear">pear</string>
+    <string name="grape">grape</string>
+    <string name="watermelon">watermelon</string>
+    <string name="cherry">cherry</string>
+    <string name="sweetcherry">sweetcherry</string>
+    <string name="kiwi">kiwi</string>
+    <string name="strawberry">strawberry</string>
+    <string name="pineapple">pineapple</string>
+    <string name="apricot">apricot</string>
 </resources>
