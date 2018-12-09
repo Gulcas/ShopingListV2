@@ -24,6 +24,7 @@ public class Summary extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.summary);
 
+        /**TODO- dodać pozostałe produkty do listy podsumowującej zamówienie */
         int iTomato = VegetablesActivity.getVariable(); //przywołujemy variable z innej klasy
         int iOnion = VegetablesActivity.getVariableOnion();
         int iCocumber = VegetablesActivity.getVariableCocumber();

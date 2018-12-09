@@ -25,8 +25,8 @@
             android:id="@+id/backButtonFruits"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
             android:layout_below="@id/backButton"
+            android:layout_alignParentRight="true"
             android:onClick="backToMainClick"
             android:text="@string/back" />
 
@@ -35,8 +35,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/backButtonFruits"
-            android:text="@string/apple"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="15dp"
+            android:text="@string/apple" />
 
         <Button
             android:id="@+id/applePlusButton"
@@ -136,217 +136,215 @@
             android:layout_toRightOf="@id/lemonNumber"
             android:onClick="decrementLemon"
             android:text="-" />
-        
-        //poprawić poniższe nazwy
-        
+
         <TextView
-            android:id="@+id/potatoTextView"
+            android:id="@+id/orangeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/cocumberTextView"
+            android:layout_below="@id/lemonTextView"
             android:layout_marginTop="20dp"
             android:text="@string/potato" />
 
         <Button
-            android:id="@+id/potatoPlusButton"
+            android:id="@+id/orangePlusButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/cocumberPlusButton"
+            android:layout_below="@id/lemonPlusButton"
             android:layout_centerHorizontal="true"
-            android:onClick="incrementPotato"
+            android:onClick="incrementOrange"
             android:text="+" />
 
         <TextView
-            android:id="@+id/potatoNumber"
+            android:id="@+id/orangeNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/cocumberPlusButton"
+            android:layout_below="@id/lemonPlusButton"
             android:layout_margin="10dp"
-            android:layout_toRightOf="@id/potatoPlusButton"
+            android:layout_toRightOf="@id/lemonPlusButton"
             android:text="0" />
 
         <Button
-            android:id="@+id/potatoMinusButton"
+            android:id="@+id/orangeMinusButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/cocumberPlusButton"
-            android:layout_toRightOf="@id/potatoNumber"
-            android:onClick="decrementPotato"
+            android:layout_below="@id/lemonPlusButton"
+            android:layout_toRightOf="@id/orangeNumber"
+            android:onClick="decrementOrange"
             android:text="-" />
 
         <TextView
-            android:id="@+id/paprikaTextView"
+            android:id="@+id/peachTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/potatoTextView"
+            android:layout_below="@id/orangeTextView"
             android:layout_marginTop="20dp"
-            android:text="@string/paprika" />
+            android:text="@string/peach" />
 
         <Button
-            android:id="@+id/paprikaPlusButton"
+            android:id="@+id/peachPlusButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/potatoPlusButton"
+            android:layout_below="@id/orangePlusButton"
             android:layout_centerHorizontal="true"
-            android:onClick="incrementPaprika"
+            android:onClick="incrementPeach"
             android:text="+" />
 
         <TextView
-            android:id="@+id/paprikaNumber"
+            android:id="@+id/peachNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/potatoPlusButton"
+            android:layout_below="@id/orangePlusButton"
             android:layout_margin="10dp"
-            android:layout_toRightOf="@id/paprikaPlusButton"
+            android:layout_toRightOf="@id/peachPlusButton"
             android:text="0" />
 
         <Button
-            android:id="@+id/paprikaMinusButton"
+            android:id="@+id/peachMinusButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/potatoPlusButton"
-            android:layout_toRightOf="@id/paprikaNumber"
-            android:onClick="decrementPaprika"
+            android:layout_below="@id/orangePlusButton"
+            android:layout_toRightOf="@id/peachNumber"
+            android:onClick="decrementPeach"
             android:text="-" />
 
         <TextView
-            android:id="@+id/parsleyTextView"
+            android:id="@+id/nectarineTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/paprikaTextView"
+            android:layout_below="@id/peachTextView"
             android:layout_marginTop="20dp"
-            android:text="@string/parsley" />
+            android:text="@string/nectarine" />
 
         <Button
-            android:id="@+id/parsleyPlusButton"
+            android:id="@+id/nectarinePlusButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/paprikaPlusButton"
+            android:layout_below="@id/peachPlusButton"
             android:layout_centerHorizontal="true"
-            android:onClick="incrementParsley"
+            android:onClick="incrementNectarine"
             android:text="+" />
 
         <TextView
-            android:id="@+id/parsleyNumber"
+            android:id="@+id/nectarineNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/paprikaPlusButton"
+            android:layout_below="@id/peachPlusButton"
             android:layout_margin="10dp"
-            android:layout_toRightOf="@id/parsleyPlusButton"
+            android:layout_toRightOf="@id/peachPlusButton"
             android:text="0" />
 
         <Button
-            android:id="@+id/parsleyMinusButton"
+            android:id="@+id/nectarineMinusButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/paprikaPlusButton"
-            android:layout_toRightOf="@id/parsleyNumber"
-            android:onClick="decrementParsley"
+            android:layout_below="@id/peachPlusButton"
+            android:layout_toRightOf="@id/nectarineNumber"
+            android:onClick="decrementNectarine"
             android:text="-" />
 
         <TextView
-            android:id="@+id/chiveTextView"
+            android:id="@+id/pearTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/parsleyTextView"
+            android:layout_below="@id/nectarineTextView"
             android:layout_marginTop="20dp"
-            android:text="@string/chive" />
+            android:text="@string/pear" />
 
         <Button
-            android:id="@+id/chivePlusButton"
+            android:id="@+id/pearPlusButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/parsleyPlusButton"
+            android:layout_below="@id/nectarinePlusButton"
             android:layout_centerHorizontal="true"
-            android:onClick="incrementChive"
+            android:onClick="incrementPear"
             android:text="+" />
 
         <TextView
-            android:id="@+id/chiveNumber"
+            android:id="@+id/pearNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/parsleyPlusButton"
+            android:layout_below="@id/nectarinePlusButton"
             android:layout_margin="10dp"
-            android:layout_toRightOf="@id/chivePlusButton"
+            android:layout_toRightOf="@id/pearPlusButton"
             android:text="0" />
 
         <Button
-            android:id="@+id/chiveMinusButton"
+            android:id="@+id/pearMinusButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/parsleyPlusButton"
-            android:layout_toRightOf="@id/chiveNumber"
-            android:onClick="decrementChive"
+            android:layout_below="@id/nectarinePlusButton"
+            android:layout_toRightOf="@id/pearNumber"
+            android:onClick="decrementPear"
             android:text="-" />
 
         <TextView
-            android:id="@+id/icebergTextView"
+            android:id="@+id/grapeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/chiveTextView"
             android:layout_marginTop="20dp"
-            android:text="@string/iceberg" />
+            android:text="@string/grape" />
 
         <Button
-            android:id="@+id/icebergPlusButton"
+            android:id="@+id/grapePlusButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/chivePlusButton"
+            android:layout_below="@id/pearPlusButton"
             android:layout_centerHorizontal="true"
-            android:onClick="incrementIceberg"
+            android:onClick="incrementGrape"
             android:text="+" />
 
         <TextView
-            android:id="@+id/icebergNumber"
+            android:id="@+id/grapeNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/chivePlusButton"
+            android:layout_below="@id/pearPlusButton"
             android:layout_margin="10dp"
-            android:layout_toRightOf="@id/icebergPlusButton"
+            android:layout_toRightOf="@id/grapePlusButton"
             android:text="0" />
 
         <Button
-            android:id="@+id/icebergMinusButton"
+            android:id="@+id/grapeMinusButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/chivePlusButton"
-            android:layout_toRightOf="@id/icebergNumber"
-            android:onClick="decrementIceberg"
+            android:layout_below="@id/pearPlusButton"
+            android:layout_toRightOf="@id/grapeNumber"
+            android:onClick="decrementGrape"
             android:text="-" />
 
         <TextView
-            android:id="@+id/garlicTextView"
+            android:id="@+id/watermelonTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/icebergTextView"
+            android:layout_below="@id/grapeTextView"
             android:layout_marginTop="20dp"
-            android:text="@string/garlic" />
+            android:text="@string/watermelon" />
 
         <Button
-            android:id="@+id/garlicPlusButton"
+            android:id="@+id/watermelonPlusButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/icebergPlusButton"
+            android:layout_below="@id/grapePlusButton"
             android:layout_centerHorizontal="true"
-            android:onClick="incrementGarlic"
+            android:onClick="incrementWatermelon"
             android:text="+" />
 
         <TextView
-            android:id="@+id/garlicNumber"
+            android:id="@+id/watermelonNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/icebergPlusButton"
+            android:layout_below="@id/grapePlusButton"
             android:layout_margin="10dp"
-            android:layout_toRightOf="@id/garlicPlusButton"
+            android:layout_toRightOf="@id/watermelonPlusButton"
             android:text="0" />
 
         <Button
-            android:id="@+id/garlicMinusButton"
+            android:id="@+id/watermelonMinusButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/icebergPlusButton"
-            android:layout_toRightOf="@id/garlicNumber"
-            android:onClick="decrementGarlic"
+            android:layout_below="@id/grapePlusButton"
+            android:layout_toRightOf="@id/watermelonNumber"
+            android:onClick="decrementWatermelon"
             android:text="-" />
 
 

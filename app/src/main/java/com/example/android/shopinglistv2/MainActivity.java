@@ -71,15 +71,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(summaryIntent);
             }
         });
-
-        final TextView odbiorca = findViewById(R.id.orderReceiverButton);
-        odbiorca.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent odbiorcaIntent = new Intent(MainActivity.this, ReceiverActivity.class);
-                startActivity(odbiorcaIntent);
-            }
-        });
+/**TODO  dodać guzik odbiorcy lub zakodować numer na stałe*/
+//        final TextView odbiorca = findViewById(R.id.orderReceiverButton);
+//        odbiorca.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent odbiorcaIntent = new Intent(MainActivity.this, ReceiverActivity.class);
+//                startActivity(odbiorcaIntent);
+//            }
+//        });
 
 
     }
