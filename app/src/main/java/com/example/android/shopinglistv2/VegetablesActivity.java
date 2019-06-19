@@ -98,7 +98,7 @@ public class VegetablesActivity extends AppCompatActivity {
     }
 
     public void incrementIceberg(View v) {
-        if (icebergQuantity == 9 ) {
+        if (icebergQuantity == 9) {
             Toast.makeText(this, getString(R.string.to_many), Toast.LENGTH_SHORT).show();
             return;
         }
@@ -108,7 +108,7 @@ public class VegetablesActivity extends AppCompatActivity {
 
     public void incrementGarlic(View v) {
         if (garlicQuantity == 9) {
-            Toast.makeText(this,getString(R.string.to_many), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.to_many), Toast.LENGTH_SHORT).show();
             return;
         }
         garlicQuantity++;
