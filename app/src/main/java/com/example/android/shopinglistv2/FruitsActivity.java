@@ -44,15 +44,17 @@ public class FruitsActivity extends AppCompatActivity {
         appleQuantity = appleQuantity + 1;
         displayApple(appleQuantity);
     }
+
     public void incrementBanana(View v) {
         if (bananaQuantity == 9) {
             Toast.makeText(this, getString(R.string.to_many), Toast.LENGTH_SHORT).show();
             return;
         }
-        bananaQuantity =bananaQuantity + 1;
+        bananaQuantity = bananaQuantity + 1;
         displayBanana(bananaQuantity);
     }
-     public void incrementLemon(View v) {
+
+    public void incrementLemon(View v) {
         if (lemonQuantity == 9) {
             Toast.makeText(this, getString(R.string.to_many), Toast.LENGTH_SHORT).show();
             return;
@@ -60,15 +62,17 @@ public class FruitsActivity extends AppCompatActivity {
         lemonQuantity = lemonQuantity + 1;
         displayLemon(lemonQuantity);
     }
-//     public void incrementMandarin(View v) {
-//        if (mandarinQuantity == 9) {
-//            Toast.makeText(this, getString(R.string.to_many), Toast.LENGTH_SHORT).show();
-//            return;
-//        }
-//        mandarinQuantity = mandarinQuantity + 1;
-//        displayMandarin(mandarinQuantity);
-//    }
-     public void incrementOrange(View v) {
+
+    public void incrementMandarin(View v) {
+        if (mandarinQuantity == 9) {
+            Toast.makeText(this, getString(R.string.to_many), Toast.LENGTH_SHORT).show();
+            return;
+        }
+        mandarinQuantity = mandarinQuantity + 1;
+        displayMandarin(mandarinQuantity);
+    }
+
+    public void incrementOrange(View v) {
         if (orangeQuantity == 9) {
             Toast.makeText(this, getString(R.string.to_many), Toast.LENGTH_SHORT).show();
             return;
@@ -76,7 +80,8 @@ public class FruitsActivity extends AppCompatActivity {
         orangeQuantity = orangeQuantity + 1;
         displayOrange(orangeQuantity);
     }
-     public void incrementPeach(View v) {
+
+    public void incrementPeach(View v) {
         if (peachQuantity == 9) {
             Toast.makeText(this, getString(R.string.to_many), Toast.LENGTH_SHORT).show();
             return;
@@ -84,7 +89,8 @@ public class FruitsActivity extends AppCompatActivity {
         peachQuantity = peachQuantity + 1;
         displayPeach(peachQuantity);
     }
-     public void incrementNectarine(View v) {
+
+    public void incrementNectarine(View v) {
         if (nectarineQuantity == 9) {
             Toast.makeText(this, getString(R.string.to_many), Toast.LENGTH_SHORT).show();
             return;
@@ -92,7 +98,8 @@ public class FruitsActivity extends AppCompatActivity {
         nectarineQuantity = nectarineQuantity + 1;
         displayNectarine(nectarineQuantity);
     }
-     public void incrementPear(View v) {
+
+    public void incrementPear(View v) {
         if (pearQuantity == 9) {
             Toast.makeText(this, getString(R.string.to_many), Toast.LENGTH_SHORT).show();
             return;
@@ -100,7 +107,8 @@ public class FruitsActivity extends AppCompatActivity {
         pearQuantity = pearQuantity + 1;
         displayPear(pearQuantity);
     }
-     public void incrementGrape(View v) {
+
+    public void incrementGrape(View v) {
         if (grapeQuantity == 9) {
             Toast.makeText(this, getString(R.string.to_many), Toast.LENGTH_SHORT).show();
             return;
@@ -108,7 +116,8 @@ public class FruitsActivity extends AppCompatActivity {
         grapeQuantity = grapeQuantity + 1;
         displayGrape(grapeQuantity);
     }
-     public void incrementWatermelon(View v) {
+
+    public void incrementWatermelon(View v) {
         if (watermelonQuantity == 9) {
             Toast.makeText(this, getString(R.string.to_many), Toast.LENGTH_SHORT).show();
             return;
@@ -174,7 +183,8 @@ public class FruitsActivity extends AppCompatActivity {
         appleQuantity = appleQuantity - 1;
         displayApple(appleQuantity);
     }
-        public void decrementBanana(View v) {
+
+    public void decrementBanana(View v) {
         if (bananaQuantity < 1) {
             bananaQuantity = 0;
             Toast.makeText(this, getString(R.string.to_low), Toast.LENGTH_SHORT).show();
@@ -184,7 +194,7 @@ public class FruitsActivity extends AppCompatActivity {
         displayBanana(bananaQuantity);
     }
 
-        public void decrementLemon(View v) {
+    public void decrementLemon(View v) {
         if (lemonQuantity < 1) {
             lemonQuantity = 0;
             Toast.makeText(this, getString(R.string.to_low), Toast.LENGTH_SHORT).show();
@@ -194,17 +204,17 @@ public class FruitsActivity extends AppCompatActivity {
         displayLemon(lemonQuantity);
     }
 
-//        public void decrementMandarin(View v) {
-//        if (mandarinQuantity < 1) {
-//            mandarinQuantity = 0;
-//            Toast.makeText(this, getString(R.string.to_low), Toast.LENGTH_SHORT).show();
-//            return;
-//        }
-//        mandarinQuantity = mandarinQuantity - 1;
-//        displayMandarin(mandarinQuantity);
-//    }
+    public void decrementMandarin(View v) {
+        if (mandarinQuantity < 1) {
+            mandarinQuantity = 0;
+            Toast.makeText(this, getString(R.string.to_low), Toast.LENGTH_SHORT).show();
+            return;
+        }
+        mandarinQuantity = mandarinQuantity - 1;
+        displayMandarin(mandarinQuantity);
+    }
 
-        public void decrementOrange(View v) {
+    public void decrementOrange(View v) {
         if (orangeQuantity < 1) {
             orangeQuantity = 0;
             Toast.makeText(this, getString(R.string.to_low), Toast.LENGTH_SHORT).show();
@@ -214,7 +224,7 @@ public class FruitsActivity extends AppCompatActivity {
         displayOrange(orangeQuantity);
     }
 
-        public void decrementPeach(View v) {
+    public void decrementPeach(View v) {
         if (peachQuantity < 1) {
             peachQuantity = 0;
             Toast.makeText(this, getString(R.string.to_low), Toast.LENGTH_SHORT).show();
@@ -224,7 +234,7 @@ public class FruitsActivity extends AppCompatActivity {
         displayPeach(peachQuantity);
     }
 
-        public void decrementNectarine(View v) {
+    public void decrementNectarine(View v) {
         if (nectarineQuantity < 1) {
             nectarineQuantity = 0;
             Toast.makeText(this, getString(R.string.to_low), Toast.LENGTH_SHORT).show();
@@ -234,7 +244,7 @@ public class FruitsActivity extends AppCompatActivity {
         displayNectarine(nectarineQuantity);
     }
 
-        public void decrementPear(View v) {
+    public void decrementPear(View v) {
         if (pearQuantity < 1) {
             pearQuantity = 0;
             Toast.makeText(this, getString(R.string.to_low), Toast.LENGTH_SHORT).show();
@@ -244,7 +254,7 @@ public class FruitsActivity extends AppCompatActivity {
         displayPear(pearQuantity);
     }
 
-        public void decrementGrape(View v) {
+    public void decrementGrape(View v) {
         if (grapeQuantity < 1) {
             grapeQuantity = 0;
             Toast.makeText(this, getString(R.string.to_low), Toast.LENGTH_SHORT).show();
@@ -254,7 +264,7 @@ public class FruitsActivity extends AppCompatActivity {
         displayGrape(grapeQuantity);
     }
 
-        public void decrementWatermelon(View v) {
+    public void decrementWatermelon(View v) {
         if (watermelonQuantity < 1) {
             watermelonQuantity = 0;
             Toast.makeText(this, getString(R.string.to_low), Toast.LENGTH_SHORT).show();
@@ -264,7 +274,7 @@ public class FruitsActivity extends AppCompatActivity {
         displayWatermelon(watermelonQuantity);
     }
 
-//        public void decrementCherry(View v) {
+    //        public void decrementCherry(View v) {
 //        if (cherryQuantity < 1) {
 //            cherryQuantity = 0;
 //            Toast.makeText(this, getString(R.string.to_low), Toast.LENGTH_SHORT).show();
@@ -325,33 +335,57 @@ public class FruitsActivity extends AppCompatActivity {
 //    }
     private void displayApple(int i) {
         TextView quantityAppleTextView = (TextView) findViewById(R.id.appleNumber);
-        quantityAppleTextView.setText("" + i);}
+        quantityAppleTextView.setText("" + i);
+    }
+
     private void displayBanana(int i) {
         TextView quantityBananaTextView = (TextView) findViewById(R.id.bananaNumber);
-        quantityBananaTextView.setText("" + i);}
+        quantityBananaTextView.setText("" + i);
+    }
+
     private void displayLemon(int i) {
         TextView quantityLemonTextView = (TextView) findViewById(R.id.lemonNumber);
-        quantityLemonTextView.setText("" + i);}
+        quantityLemonTextView.setText("" + i);
+    }
+
     private void displayOrange(int i) {
         TextView quantityOrangeTextView = (TextView) findViewById(R.id.orangeNumber);
-        quantityOrangeTextView.setText("" + i);}
+        quantityOrangeTextView.setText("" + i);
+    }
+
     private void displayPeach(int i) {
         TextView quantityPeachTextView = (TextView) findViewById(R.id.peachNumber);
-        quantityPeachTextView.setText("" + i);}
+        quantityPeachTextView.setText("" + i);
+    }
+
     private void displayNectarine(int i) {
         TextView quantityNectarineTextView = (TextView) findViewById(R.id.nectarineNumber);
-        quantityNectarineTextView.setText("" + i);}
+        quantityNectarineTextView.setText("" + i);
+    }
+
     private void displayPear(int i) {
         TextView quantityPearTextView = (TextView) findViewById(R.id.pearNumber);
-        quantityPearTextView.setText("" + i);}
+        quantityPearTextView.setText("" + i);
+    }
+
     private void displayGrape(int i) {
         TextView quantityGrapeTextView = (TextView) findViewById(R.id.grapeNumber);
-        quantityGrapeTextView.setText("" + i);}
+        quantityGrapeTextView.setText("" + i);
+    }
+
     private void displayWatermelon(int i) {
         TextView quantityWatermelonTextView = (TextView) findViewById(R.id.watermelonNumber);
-        quantityWatermelonTextView.setText("" + i);}
+        quantityWatermelonTextView.setText("" + i);
+    }
 
-        /** TODO dokończyć layout w fruits.xml */
+    private void displayMandarin(int i) {
+        TextView quanitityMandarinTextView = findViewById(R.id.mandarinNumber);
+        quanitityMandarinTextView.setText("" + i);
+    }
+
+    /**
+     * TODO dokończyć layout w fruits.xml
+     */
 //    private void displayCherry(int i) {
 //        TextView quantityCherryTextView = (TextView) findViewById(R.id.cherryNumber);
 //        quantityCherryTextView.setText("" + i);}
@@ -370,26 +404,71 @@ public class FruitsActivity extends AppCompatActivity {
 //    private void displayApricot(int i) {
 //        TextView quantityApricotTextView = (TextView) findViewById(R.id.apricotNumber);
 //        quantityApricotTextView.setText("" + i);}
+    public static int getVariableApple() {
+        return appleQuantity;
+    }
 
+    public static int getVariableBanana() {
+        return bananaQuantity;
+    }
 
-    public static int getVariableApple() {return appleQuantity;}
-    public static int getVariableBanana() {return bananaQuantity;}
-    public static int getVariableLemon() {return lemonQuantity;}
-    public static int getVariableMandarin() {return mandarinQuantity;}
-    public static int getVariableOrange() {return orangeQuantity;}
-    public static int getVariablePeach() {return peachQuantity;}
-    public static int getVariableNectarine() {return nectarineQuantity;}
-    public static int getVariablePear() {return pearQuantity;}
-    public static int getVariableGrape() {return grapeQuantity;}
-    public static int getVariableWatermelon() {return watermelonQuantity;}
-    public static int getVariableCherry() {return cherryQuantity;}
-    public static int getVariableSweetcherry() {return sweetcherryQuantity;}
-    public static int getVariableKiwi() {return kiwiQuantity;}
-    public static int getVariableStrawberry() {return kiwiQuantity;}
-    public static int getVariablePineapple() {return pineappleQuantity;}
-    public static int getVariableApricot() {return apricotQuantity;}
+    public static int getVariableLemon() {
+        return lemonQuantity;
+    }
 
-     public void backClick(View v) {
+    public static int getVariableMandarin() {
+        return mandarinQuantity;
+    }
+
+    public static int getVariableOrange() {
+        return orangeQuantity;
+    }
+
+    public static int getVariablePeach() {
+        return peachQuantity;
+    }
+
+    public static int getVariableNectarine() {
+        return nectarineQuantity;
+    }
+
+    public static int getVariablePear() {
+        return pearQuantity;
+    }
+
+    public static int getVariableGrape() {
+        return grapeQuantity;
+    }
+
+    public static int getVariableWatermelon() {
+        return watermelonQuantity;
+    }
+
+    public static int getVariableCherry() {
+        return cherryQuantity;
+    }
+
+    public static int getVariableSweetcherry() {
+        return sweetcherryQuantity;
+    }
+
+    public static int getVariableKiwi() {
+        return kiwiQuantity;
+    }
+
+    public static int getVariableStrawberry() {
+        return kiwiQuantity;
+    }
+
+    public static int getVariablePineapple() {
+        return pineappleQuantity;
+    }
+
+    public static int getVariableApricot() {
+        return apricotQuantity;
+    }
+
+    public void backClick(View v) {
         Intent summaryIntent = new Intent(this, Summary.class);
         startActivity(summaryIntent);
     }

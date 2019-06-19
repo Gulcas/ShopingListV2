@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/backButtonFruits"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="20dp"
             android:text="@string/apple" />
 
         <Button
@@ -71,7 +71,7 @@
             android:id="@+id/bananaTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/bananaTextView"
+            android:layout_below="@id/appleTextView"
             android:layout_marginTop="20dp"
             android:text="@string/banana" />
 
@@ -79,7 +79,7 @@
             android:id="@+id/bananaPlusButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/bananaPlusButton"
+            android:layout_below="@id/applePlusButton"
             android:layout_centerHorizontal="true"
             android:onClick="incrementBanana"
             android:text="+" />
@@ -281,7 +281,7 @@
             android:id="@+id/grapeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/chiveTextView"
+            android:layout_below="@id/pearTextView"
             android:layout_marginTop="20dp"
             android:text="@string/grape" />
 
@@ -313,12 +313,12 @@
             android:text="-" />
 
         <TextView
-            android:id="@+id/watermelonTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/grapeTextView"
-            android:layout_marginTop="20dp"
-            android:text="@string/watermelon" />
+        android:id="@+id/watermelonTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grapeTextView"
+        android:layout_marginTop="20dp"
+        android:text="@string/watermelon" />
 
         <Button
             android:id="@+id/watermelonPlusButton"
@@ -339,12 +339,46 @@
             android:text="0" />
 
         <Button
+            android:id="@+id/mandarinMinusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/watermelonPlusButton"
+            android:layout_toRightOf="@id/watermelonNumber"
+            android:onClick="decrementWatermelon"
+            android:text="-" />
+        <TextView
+            android:id="@+id/mandarinTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/watermelonTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/mandarin" />
+
+        <Button
+            android:id="@+id/mandarinPlusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/watermelonPlusButton"
+            android:layout_centerHorizontal="true"
+            android:onClick="incrementMandarin"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/mandarinNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/watermelonPlusButton"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/watermelonPlusButton"
+            android:text="0" />
+
+        <Button
             android:id="@+id/watermelonMinusButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/grapePlusButton"
             android:layout_toRightOf="@id/watermelonNumber"
-            android:onClick="decrementWatermelon"
+            android:onClick="decrementMandarin"
             android:text="-" />
 
 
