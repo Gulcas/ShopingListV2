@@ -381,6 +381,217 @@
             android:onClick="decrementMandarin"
             android:text="-" />
 
+        <TextView
+            android:id="@+id/cherryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mandarinTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/cherry" />
+
+        <Button
+            android:id="@+id/cherryPlusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mandarinPlusButton"
+            android:layout_centerHorizontal="true"
+            android:onClick="incrementCherry"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/cherryNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mandarinPlusButton"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/mandarinPlusButton"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/cherryMinusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mandarinPlusButton"
+            android:layout_toRightOf="@id/mandarinNumber"
+            android:onClick="decrementCherry"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/sweetcherryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cherryTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/sweetcherry" />
+
+        <Button
+            android:id="@+id/sweetcherryPlusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cherryPlusButton"
+            android:layout_centerHorizontal="true"
+            android:onClick="incrementSweetCherry"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/sweetcherryNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cherryPlusButton"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/cherryPlusButton"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/sweetcherryMinusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cherryPlusButton"
+            android:layout_toRightOf="@id/cherryNumber"
+            android:onClick="decrementSweetCherry"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/kiwiTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sweetcherryTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/kiwi" />
+
+        <Button
+            android:id="@+id/kiwiPlusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sweetcherryPlusButton"
+            android:layout_centerHorizontal="true"
+            android:onClick="incrementKiwi"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/kiwiNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sweetcherryPlusButton"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/sweetcherryPlusButton"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/kiwiMinusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sweetcherryPlusButton"
+            android:layout_toRightOf="@id/sweetcherryNumber"
+            android:onClick="decrementKiwi"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/strawberryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kiwiTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/strawberry" />
+
+        <Button
+            android:id="@+id/strawberryPlusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kiwiPlusButton"
+            android:layout_centerHorizontal="true"
+            android:onClick="incrementStrawberry"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/strawberryNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kiwiPlusButton"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/kiwiPlusButton"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/strawberryMinusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kiwiPlusButton"
+            android:layout_toRightOf="@id/kiwiNumber"
+            android:onClick="decrementStrawberry"
+            android:text="-" />
+
+
+        <TextView
+            android:id="@+id/pineappleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/strawberryTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/pineapple" />
+
+        <Button
+            android:id="@+id/pineapplePlusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/strawberryPlusButton"
+            android:layout_centerHorizontal="true"
+            android:onClick="incrementPineapple"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/pineappleNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/strawberryPlusButton"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/strawberryPlusButton"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/pineappleMinusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/strawberryPlusButton"
+            android:layout_toRightOf="@id/strawberryNumber"
+            android:onClick="decrementPineapple"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/apricotTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pineappleTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/apricot" />
+
+        <Button
+            android:id="@+id/apricotPlusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pineapplePlusButton"
+            android:layout_centerHorizontal="true"
+            android:onClick="incrementApricot"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/apricotNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pineapplePlusButton"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/pineapplePlusButton"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/apricotMinusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pineapplePlusButton"
+            android:layout_toRightOf="@id/pineappleNumber"
+            android:onClick="decrementApricot"
+            android:text="-" />
+
 
     </RelativeLayout>
 </ScrollView>

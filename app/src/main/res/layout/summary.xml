@@ -7,27 +7,22 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-
         <TextView
             android:id="@+id/summaryLiczba"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-
         <TextView
             android:id="@+id/summaryTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/summaryLiczba" />
-
         <Button
             android:id="@+id/warzywkaWroc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:text="@string/back" />
-
         <Button
             android:id="@+id/sendButton"
             android:layout_width="wrap_content"
@@ -35,141 +30,188 @@
             android:layout_alignParentRight="true"
             android:layout_below="@id/warzywkaWroc"
             android:text="@string/send" />
-
         <TextView
             android:id="@+id/summaryLiczbaDruga"
             style="@style/orderName"
             android:layout_below="@id/summaryLiczba" />
-
         <TextView
             android:id="@+id/summaryTextViewDrugi"
             style="@style/order"
             android:layout_below="@id/summaryTextView"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/summaryLiczbaDruga" />
-
         <TextView
             android:id="@+id/summaryLiczbaTrzecia"
             style="@style/orderName"
             android:layout_below="@id/summaryLiczbaDruga" />
-
         <TextView
             android:id="@+id/summaryTextViewTrzeci"
             style="@style/order"
             android:layout_below="@id/summaryTextViewDrugi"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/summaryLiczbaTrzecia" />
-
         <TextView
             android:id="@+id/summaryLiczbaCzwarta"
             style="@style/orderName"
             android:layout_below="@id/summaryLiczbaTrzecia" />
-
         <TextView
             android:id="@+id/summaryTextViewCzwarty"
             style="@style/order"
             android:layout_below="@id/summaryTextViewTrzeci"
             android:layout_toRightOf="@+id/summaryLiczbaCzwarta" />
-
         <TextView
             android:id="@+id/summaryLiczbaPiata"
             style="@style/orderName"
             android:layout_below="@id/summaryLiczbaCzwarta" />
-
         <TextView
             android:id="@+id/summaryTextViewPiaty"
             style="@style/order"
             android:layout_below="@id/summaryTextViewCzwarty"
             android:layout_toRightOf="@id/summaryLiczbaPiata" />
-
         <TextView
             android:id="@+id/summaryLiczbaSzosta"
             style="@style/orderName"
             android:layout_below="@id/summaryLiczbaPiata" />
-
         <TextView
             android:id="@+id/summaryTextViewSzosty"
             style="@style/order"
             android:layout_below="@id/summaryTextViewPiaty"
             android:layout_toRightOf="@id/summaryLiczbaSzosta" />
-
         <TextView
             android:id="@+id/summaryLiczbaSiodma"
             style="@style/orderName"
             android:layout_below="@id/summaryLiczbaSzosta" />
-
         <TextView
             android:id="@+id/summaryTextViewSiodmy"
             style="@style/order"
             android:layout_below="@id/summaryTextViewSzosty"
             android:layout_toRightOf="@id/summaryLiczbaSiodma" />
-
         <TextView
             android:id="@+id/summaryLiczbaOsma"
             style="@style/orderName"
             android:layout_below="@id/summaryLiczbaSiodma" />
-
         <TextView
             android:id="@+id/summaryTextViewOsmy"
             style="@style/order"
             android:layout_below="@id/summaryTextViewSiodmy"
             android:layout_toRightOf="@id/summaryLiczbaOsma" />
-
         <TextView
             android:id="@+id/summaryLiczbaDziewiata"
             style="@style/orderName"
             android:layout_below="@id/summaryLiczbaOsma" />
-
         <TextView
             android:id="@+id/summaryTextViewDziewiaty"
             style="@style/order"
             android:layout_below="@id/summaryTextViewOsmy"
             android:layout_toRightOf="@id/summaryLiczbaDziewiata" />
-
         <TextView
             android:id="@+id/summaryLiczbaDziesiata"
             style="@style/orderName"
             android:layout_below="@id/summaryLiczbaDziewiata" />
-
         <TextView
             android:id="@+id/summaryTextViewDziesiaty"
             style="@style/order"
             android:layout_below="@id/summaryTextViewDziewiaty"
             android:layout_toRightOf="@id/summaryLiczbaDziesiata" />
-
         <TextView
             android:id="@+id/summaryLiczbaJedenasta"
             style="@style/orderName"
             android:layout_below="@id/summaryLiczbaDziesiata" />
-
         <TextView
             android:id="@+id/summaryTextViewJedenasty"
             style="@style/order"
             android:layout_below="@id/summaryTextViewDziesiaty"
             android:layout_toRightOf="@id/summaryLiczbaJedenasta" />
-
         <TextView
             android:id="@+id/summaryLiczbaDwunasta"
             style="@style/orderName"
             android:layout_below="@id/summaryLiczbaJedenasta" />
-
         <TextView
             android:id="@+id/summaryTextViewDwunasty"
             style="@style/order"
             android:layout_below="@id/summaryTextViewJedenasty"
             android:layout_toRightOf="@id/summaryLiczbaDwunasta" />
-
         <TextView
             android:id="@+id/summaryLiczbaTrzynasta"
             style="@style/orderName"
             android:layout_below="@id/summaryLiczbaDwunasta" />
-
         <TextView
             android:id="@+id/summaryTextViewTrzynasty"
             style="@style/order"
             android:layout_below="@id/summaryTextViewDwunasty"
             android:layout_toRightOf="@id/summaryLiczbaTrzynasta" />
-
+        <TextView
+            android:id="@+id/summaryLiczbaCzternasta"
+            style="@style/orderName"
+            android:layout_below="@id/summaryLiczbaTrzynasta" />
+        <TextView
+            android:id="@+id/summaryTextViewCzternasty"
+            style="@style/order"
+            android:layout_below="@id/summaryTextViewTrzynasty"
+            android:layout_toRightOf="@id/summaryLiczbaCzternasta" />
+        <TextView
+            android:id="@+id/summaryLiczbaPietnasta"
+            style="@style/orderName"
+            android:layout_below="@id/summaryLiczbaCzternasta" />
+        <TextView
+            android:id="@+id/summaryTextViewPietnasty"
+            style="@style/order"
+            android:layout_below="@id/summaryTextViewCzternasty"
+            android:layout_toRightOf="@id/summaryLiczbaPietnasta" />
+        <TextView
+            android:id="@+id/summaryLiczbaSzesnasta"
+            style="@style/orderName"
+            android:layout_below="@id/summaryLiczbaPietnasta" />
+        <TextView
+            android:id="@+id/summaryTextViewSzesnasty"
+            style="@style/order"
+            android:layout_below="@id/summaryTextViewPietnasty"
+            android:layout_toRightOf="@id/summaryLiczbaSzesnasta" />
+        <TextView
+            android:id="@+id/summaryLiczbaSiedemnasta"
+            style="@style/orderName"
+            android:layout_below="@id/summaryLiczbaSzesnasta" />
+        <TextView
+            android:id="@+id/summaryTextViewSiedemnasty"
+            style="@style/order"
+            android:layout_below="@id/summaryTextViewSzesnasty"
+            android:layout_toRightOf="@id/summaryLiczbaSiedemnasta" />
+        <TextView
+            android:id="@+id/summaryLiczbaOsiemnasta"
+            style="@style/orderName"
+            android:layout_below="@id/summaryLiczbaSiedemnasta" />
+        <TextView
+            android:id="@+id/summaryTextViewOsiemnasty"
+            style="@style/order"
+            android:layout_below="@id/summaryTextViewSiedemnasty"
+            android:layout_toRightOf="@id/summaryLiczbaOsiemnasta" />
+        <TextView
+            android:id="@+id/summaryLiczbaDziewietnasta"
+            style="@style/orderName"
+            android:layout_below="@id/summaryLiczbaOsiemnasta" />
+        <TextView
+            android:id="@+id/summaryTextViewDziewietnasty"
+            style="@style/order"
+            android:layout_below="@id/summaryTextViewOsiemnasty"
+            android:layout_toRightOf="@id/summaryLiczbaDziewietnasta" />
+        <TextView
+            android:id="@+id/summaryLiczbaDwudziesta"
+            style="@style/orderName"
+            android:layout_below="@id/summaryLiczbaDziewietnasta" />
+        <TextView
+            android:id="@+id/summaryTextViewDwudziesty"
+            style="@style/order"
+            android:layout_below="@id/summaryTextViewDziewietnasty"
+            android:layout_toRightOf="@id/summaryLiczbaDwudziesta" />
+        <TextView
+            android:id="@+id/summaryLiczbaDwudziestaPierwsza"
+            style="@style/orderName"
+            android:layout_below="@id/summaryLiczbaDwudziesta" />
+        <TextView
+            android:id="@+id/summaryTextViewDwudziestyPierwszy"
+            style="@style/order"
+            android:layout_below="@id/summaryTextViewDwudziesty"
+            android:layout_toRightOf="@id/summaryLiczbaDwudziestaPierwsza" />
 
     </RelativeLayout>
 </ScrollView>
